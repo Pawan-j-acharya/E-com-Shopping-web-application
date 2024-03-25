@@ -43,6 +43,8 @@ export default function ShopPage() {
                   image={item.image}
                   price={item.price}
                   title={item.title}
+                  rate={item.rating.rate}
+                  count={item.rating.count}
                 ></ProductCard>
               ))
             )}

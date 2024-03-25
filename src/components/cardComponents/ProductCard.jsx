@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CardSkeleton from "./CardSkeleton";
 import { useState } from "react";
 
-export default function ProductCard({ id, title, price, image }) {
+export default function ProductCard({ id, title, price, image, rate, count }) {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   const handleImageLoaded = () => {
@@ -24,7 +24,7 @@ export default function ProductCard({ id, title, price, image }) {
         to={`/product/${id}`}
       >
         <div className="card card-compact h-full w-full bg-white shadow-md border-[1px] my-4 flex flex-col justify-end">
-          <figure className="px-6 py-4 h-32">
+          <figure className="px-6 py-4 h-36">
             {imgLoaded || <CardSkeleton></CardSkeleton>}
             <img
               onLoad={handleImageLoaded}
@@ -45,7 +45,7 @@ export default function ProductCard({ id, title, price, image }) {
               </dfn>
             </h2>
             <p className="italic text-md mb-4">${price}</p>
-            <p className="text-xs">Rating: ⭐⭐⭐⭐⭐</p>
+            <p className="text-xs">Rating: {rate}⭐({ count})</p>
           </div>
         </div>
       </Link>

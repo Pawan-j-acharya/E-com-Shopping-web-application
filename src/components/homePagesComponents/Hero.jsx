@@ -1,9 +1,9 @@
-import  {useNavigate}  from "react-router-dom";
+import  { useNavigate }  from "react-router-dom";
 import heroImage from "../../assets/hero-final.jpg";
 /* eslint-disable react/prop-types */
 export default function Hero() {
 
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const handleButtonClick = () => {
     navigate("/shop");

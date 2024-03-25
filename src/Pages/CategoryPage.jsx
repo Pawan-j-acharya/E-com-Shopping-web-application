@@ -25,6 +25,8 @@ export default function CategoryPage() {
                 price={item.price}
                 key={item.id}
                 title={item.title}
+                rate={item.rating.rate}
+                count={item.rating.count}
               ></ProductCard>
             ))
           ) : status === 'loading' ? (

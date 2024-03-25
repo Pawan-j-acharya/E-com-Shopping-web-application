@@ -31,6 +31,8 @@ export default function FeaturedProducts() {
               image={item.image}
               price={item.price}
               description={item.description}
+              rate={item.rating.rate}
+              count={item.rating.count}
             ></ProductCard>
           </li>
         ))}
