@@ -31,6 +31,7 @@ export default function ProductCard({ id, title, price, image }) {
               width={200}
               src={image}
               className="rounded-sm h-full w-full object-contain object-center"
+              alt={title}
             />
           </figure>
           <div className="card-body h-max flex flex-col items-start">

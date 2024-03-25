@@ -3,7 +3,6 @@ import useCartStore from '../../features/cartView.js';
 
 export default function CartProductCard({ id, quantity }) {
   const [itemData, setItemData] = useState(null);
-  const addToCart = useCartStore((state) => state.addToCart);
   const deleteItem = useCartStore((state) => state.deleteItem);
 
   const [ignore, setIgnore] = useState(null);
