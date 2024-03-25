@@ -30,12 +30,14 @@ function SingleProductPage() {
         </div>
       )  : (
         <>
+        {console.log(product)}
           <div className="flex flex-col items-center px-6">
             <figure className="py-8 w-full bg-white">
               <img
                 className="m-auto"
                 src={product.image}
                 width="250"
+                // eslint-disable-next-line
                 alt={`${product.title} image`}
               ></img>
             </figure>

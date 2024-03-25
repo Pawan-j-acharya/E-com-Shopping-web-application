@@ -15,8 +15,14 @@ const useCategoryStore = create((set) => ({
         case "men's-clothing":
           slug = "men's%20clothing";
           break;
+        case "jewelery":
+            slug = "jewelery";
+            break;
+        case "electronics":
+              slug = "electronics";
+              break;
           default:
-            slug = "men's%20clothing";
+            slug = "electronics";
             break;
 
       }

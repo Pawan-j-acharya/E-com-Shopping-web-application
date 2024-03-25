@@ -20,12 +20,13 @@ export default function Awards() {
           </p>
         </li>
         <li className="flex flex-col items-center justify-center text-center max-w-32">
+       
           <img height="120" width="120" src={award3} alt="random-award-img"></img>
           <p className="mt-2 text-xs lg:text-sm italic text-zinc-500">
             Free Shipping - Most lost parcel award of 2024
           </p>
         </li>
-        <li className="mt-2 flex flex-col items-center justify-center text-center max-w-32">
+        <li className="mt-2 flex flex-col items-center justify-center text-center max-w-32">     
           <img height="110" width="110" src={award4} alt="random-award-img"></img>
           <p className="mt-2 text-xs lg:text-sm italic text-zinc-500">
             Customer Service of the Century
