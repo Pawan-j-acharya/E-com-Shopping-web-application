@@ -1,7 +1,6 @@
 import Hero from "../components/homePagesComponents/Hero";
 import FeaturedProducts from "../components/homePagesComponents/FeaturedProducts";
 import Awards from "../components/homePagesComponents/Awards";
-import ReviewCard from "../components/homePagesComponents/ReviewCard";
 import ReviewSlider from "../components/homePagesComponents/ReviewSlider";
 import fs2 from "../assets/fs2.png"
 import { useNavigate } from "react-router-dom";
@@ -30,7 +29,7 @@ export default function Homepage() {
       <div className="bg-slate-300 grid lg:grid-cols-2 lg:grid-rows-1 grid-rows-2 justify-center items-center text-4xl px-16 p-20 lg:p-10">
         <div className="lg:my-20 flex justify-center">
           <div className="glow shadow-3xl shadow-pastel-pink rounded-full p-10 lg:p-20 max-w-[600px]">
-            <img className="m-auto" src={fs2} />
+            <img className="m-auto" src={fs2} alt="free-delivery-image" />
           </div>
         </div>
         <div className="flex flex-col m-auto lg:px-20">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function () {
+export default  function DesktopMenu() {
   const NavigateToTop = () => {
     window.scroll(0, 0);
   };
