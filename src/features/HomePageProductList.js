@@ -1,0 +1,10 @@
+const FJALLRAVEN_ID = 1;
+const DRAGON_BRACCELET_ID = 5;
+const ACER_SB220Q_ID = 13;
+const SAMSUNG_CHG90_ID = 14;
+export const featuredProductList = [
+  FJALLRAVEN_ID,
+  DRAGON_BRACCELET_ID,
+  ACER_SB220Q_ID,
+  SAMSUNG_CHG90_ID,
+];
