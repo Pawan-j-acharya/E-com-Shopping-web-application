@@ -4,6 +4,11 @@ import CardSkeleton from "./CardSkeleton";
 import { useState } from "react";
 
 export default function ProductCard({ id, title, price, image, rate, count }) {
+
+  const navigateToTop = () => {
+    window.scroll(0, 0);
+  };
+
   const [imgLoaded, setImgLoaded] = useState(false);
 
   const handleImageLoaded = () => {
@@ -12,9 +17,6 @@ export default function ProductCard({ id, title, price, image, rate, count }) {
   
   const titleShorten =
     title.length > 30 ? title.slice(0, 25).trim() + ".." : title;
-  const navigateToTop = () => {
-    window.scroll(0, 0);
-  };
 
   return (
     <>
