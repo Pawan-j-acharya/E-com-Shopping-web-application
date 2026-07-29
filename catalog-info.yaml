@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+   kind: Component
+   metadata:
+     name: ecom-shopping-web-app
+     description: E-commerce shopping web application
+     annotations:
+       github.com/project-slug: Pawan-j-acharya/E-com-Shopping-web-application
+   spec:
+     type: website
+     lifecycle: experimental
+     owner: guests
